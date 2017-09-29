@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  height: 100%;
+}
+
+
+.background-1 {
+  background-image: url('../images/creepyhouse.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.background-2 {
+  background-image: url('../images/creepystairs.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.header h1{
+background-color: white;
+opacity: 0.55;
+width: 50%;
+}
+
+
+
+
+
+@@media screen and (max-width:568px;) {
+  .background-1 .background-2 {
+
+    height: auto;
+    background-attachment: scroll;
+  }
