@@ -3,6 +3,12 @@ body {
   height: 100%;
 }
 
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
 
 .background-1 {
   background-image: url('../images/creepyhouse.jpg');
@@ -44,9 +50,17 @@ width: 50%;
 
 
 
-@@media screen and (max-width:568px;) {
-  .background-1 .background-2 {
+@media screen and (max-width: 568px) {
+.header {
 
-    height: auto;
+}
+
+  .background-1{
+    height: 50vh;
+    background-attachment: scroll;
+  }
+
+   .background-2 {
+      height: 50vh;
     background-attachment: scroll;
   }
