@@ -2,7 +2,7 @@ body {
   margin: 0;
   height: 100%;
 }
-
+/* A wrapper around all content on the page*/
 .wrapper {
   position: absolute;
   width: 100%;
@@ -10,6 +10,7 @@ body {
 
 }
 
+/* A section around all background images*/
 .section {
   width: 100%;
   height: 100vh;
@@ -18,6 +19,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+/* Placing the background images */
 .background-1 {
   background-image: url('../images/creepyhouse.jpg');
   /*centering the text */
@@ -30,6 +33,7 @@ body {
   background-image: url('../images/creepystairs.jpg');
 }
 
+/* centering the welcome text*/ 
 .header{
   display: flex;
   align-items: center;
@@ -43,20 +47,18 @@ opacity: 0.55;
 width: 50%;
 }
 
+/* Making the images responsive*/
 
 @media screen and (max-width: 568px) {
-.header {
 
-}
-
-  .background-1{
-    height: 50vh;
-    background-attachment: scroll;
+.background-1{
+  height: 50vh;
+  background-attachment: scroll;
   }
 
-   .background-2 {
-      height: 45vh;
-    background-attachment: scroll;
+.background-2 {
+  height: 45vh;
+  background-attachment: scroll;
   }
 
 
