@@ -22,7 +22,7 @@ body {
 
 /* Placing the background images */
 .background-1 {
-  background-image: url('../images/creepyhouse.jpg');
+  background-image: url('../images/1.house.jpg');
   /*centering the text */
   display: flex;
   justify-content: center;
@@ -30,10 +30,46 @@ body {
 }
 
 .background-2 {
-  background-image: url('../images/creepystairs.jpg');
+  background-image: url('../images/2.door.jpg');
 }
 
-/* centering the welcome text*/ 
+.background-3 {
+  background-image: url('../images/3.kitchen.jpg');
+}
+
+.background-4 {
+  background-image: url('../images/.jpg');
+}
+
+.background-5 {
+  background-image: url('../images/.jpg');
+}
+
+.background-6 {
+  background-image: url('../images/.jpg');
+}
+
+.background-7 {
+  background-image: url('../images/.jpg');
+}
+
+.background-8 {
+  background-image: url('../images/.jpg');
+}
+
+.background-9 {
+  background-image: url('../images/.jpg');
+}
+
+.background-10 {
+  background-image: url('../images/.jpg');
+}
+
+.background-11 {
+  background-image: url('../images/.jpg');
+}
+
+/* centering the welcome text*/
 .header{
   display: flex;
   align-items: center;
