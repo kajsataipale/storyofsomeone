@@ -10,13 +10,22 @@ body {
 
 }
 
+.animation {
+  width: 20%;
+  height: auto;
+}
+
+.yarn {
+  width: 20%;
+  height: auto;
+}
+
 /* A section around all background images*/
 .section {
-  max-width: 100vw;
+  width: 100%;
   height: 100vh;
   background-size: contain;
   background-size: 100% auto;
-
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -88,15 +97,17 @@ width: 50%;
 
 @media screen and (max-width: 568px) {
 
-.background-1{
+.background-1, .background-3, .background-4, .background-5, .background-6,
+  .background-7, .background-8, .background-9, .background-10, .background-11 {
+  background-attachment: scroll;
+  height: 50vh;
+  }
+
+.background-2 {
   height: 50vh;
   background-attachment: scroll;
   }
 
-.background-2 {
-  height: 45vh;
-  background-attachment: scroll;
-  }
-
-
+.section{
+  height: 45vh;}
   /*Create media queries for ipad*/
