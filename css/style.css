@@ -13,11 +13,66 @@ body {
 .animation {
   width: 20%;
   height: auto;
+  align-self: flex-start;
 }
+.animation:hover
+{
+        -webkit-transform: rotateZ(30deg);
+        -ms-transform: rotateZ(30deg);
+        transform: rotateZ(30deg);
+}
+.fish {
+width: 30%;
+height: auto;
+}
+
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.swing:hover
+{
+
+        animation: swing 1s ease;
+        animation-iteration-count: 1;
+}
+
+
 
 .yarn {
   width: 20%;
   height: auto;
+  align-self: flex-end;
 }
 
 /* A section around all background images*/
@@ -28,6 +83,9 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+
 }
 
 /* Placing the background images */
