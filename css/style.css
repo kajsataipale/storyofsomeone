@@ -110,11 +110,11 @@ height: auto;
 }
 
 .background-5 {
-  background-image: url('../images/5.stairs.jpg');
+  background-image: url('../images/6.bedroom.jpg');
 }
 
 .background-6 {
-  background-image: url('../images/6.bedroom.jpg');
+  background-image: url('../images/5.stairs.jpg');
 }
 
 .background-7 {
@@ -122,15 +122,15 @@ height: auto;
 }
 
 .background-8 {
-  background-image: url('../images/.jpg');
-}
-
-.background-9 {
   background-image: url('../images/10.cabinet.jpg');
 }
 
+.background-9 {
+  background-image: url('../images/11.cateyes.jpg');
+}
+
 .background-10 {
-  background-image: url('../images/.jpg');
+  background-color: black;
 }
 
 .background-11 {
