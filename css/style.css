@@ -4,6 +4,10 @@ body {
   font-family: 'Reenie Beanie', cursive;
   font-size: 200%;
 }
+
+b {
+  font-size: 130%;
+}
 /* A wrapper around all content on the page*/
 .wrapper {
   position: absolute;
