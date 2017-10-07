@@ -91,7 +91,12 @@ height: auto;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
+}
 
+section {
+  width: 100%;
+  height: 100vh;
+  background-color: lightgrey;
 }
 
 /* Placing the background images */
@@ -158,7 +163,7 @@ width: 50%;
 }
 
 /* Making the images responsive*/
-
+/* Smartphone */
 @media screen and (max-width: 568px) {
 
 .background-1, .background-3, .background-4, .background-5, .background-6,
@@ -174,4 +179,20 @@ width: 50%;
 
 .section{
   height: 45vh;}
-  /*Create media queries for ipad*/
+
+/* Tablet*/
+  @media screen and (max-width: 800px) {
+
+  .background-1, .background-3, .background-4, .background-5, .background-6,
+    .background-7, .background-8, .background-9, .background-10, .background-11 {
+    background-attachment: scroll;
+    height: 50vh;
+    }
+
+  .background-2 {
+    height: 50vh;
+    background-attachment: scroll;
+    }
+
+  .section{
+    height: 45vh;}
