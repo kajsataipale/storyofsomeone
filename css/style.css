@@ -27,6 +27,8 @@ b {
         -ms-transform: rotateZ(30deg);
         transform: rotateZ(30deg);
 }
+
+/*Making the fish swing*/
 .fish {
 width: 30%;
 height: auto;
@@ -72,6 +74,7 @@ height: auto;
         animation: swing 1s ease;
         animation-iteration-count: 1;
 }
+/* End of the animation*/ 
 
 .vase {
   width: 20%;
