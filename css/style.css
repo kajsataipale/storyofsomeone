@@ -4,7 +4,7 @@ body {
   font-family: 'Reenie Beanie', cursive;
   font-size: 200%;
 }
-
+/*Setting the font size on the words we want to higlioght*/
 b {
   font-size: 130%;
 }
@@ -15,7 +15,7 @@ b {
   height: 100%;
 
 }
-
+/* The Animation on the images*/
 .animation {
   width: 20%;
   height: auto;
@@ -73,7 +73,9 @@ height: auto;
         animation-iteration-count: 1;
 }
 
-
+.vase {
+  width: 20%;
+}
 
 .yarn {
   width: 20%;
@@ -136,11 +138,13 @@ height: auto;
 }
 
 .background-10 {
+  background-image: url('../images/17vas.png');
   background-color: black;
+
 }
 
 .background-11 {
-  background-image: url('../images/.jpg');
+  background-image: url('../images/18mjau.jpg');
 }
 
 /* centering the welcome text*/
