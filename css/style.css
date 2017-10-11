@@ -3,10 +3,13 @@ body {
   /*height: 100%;*/
   font-family: 'Reenie Beanie', cursive;
   font-size: 200%;
+  background-color: lightgrey;
+  line-height: 1.8em;
 }
 /*Setting the font size on the words we want to higlioght*/
 b {
   font-size: 130%;
+  text-transform: uppercase;
 }
 /* A wrapper around all content on the page*/
 .wrapper {
@@ -29,14 +32,14 @@ b {
 /* A section around all text on the page*/
 section {
   width: 100%;
-  height: 100%;
-  background-color: lightgrey;
+  height: 110%;
 }
 
 /* Placing the background images */
 .background-1 {
   background-image: url('../images/1.house.jpg');
-  /*centering the text */
+
+  /*centering the welcome text */
   display: flex;
   justify-content: center;
   text-align: center;
@@ -154,10 +157,11 @@ height: auto;
 {
 
         animation: swing 1s ease;
-        animation-iteration-count: 1;
+        animation-iteration-count: 2;
 }
 /* End of the animation*/
 
+/*Editing the images in the text*/
 .vase {
   width: 20%;
 }
@@ -167,7 +171,15 @@ height: auto;
   height: auto;
   align-self: flex-end;
 }
-
+.goldfish {
+    width: 20%;
+}
+.flower{
+    width: 30%;
+}
+.tail {
+  width: 20%
+}
 /* Making the images responsive*/
 /* Smartphone */
 @media screen and (max-width: 568px) {
