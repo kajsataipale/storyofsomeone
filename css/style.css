@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  height: 100%;
+  /*height: 100%;*/
   font-family: 'Reenie Beanie', cursive;
   font-size: 200%;
 }
@@ -14,6 +14,88 @@ b {
   width: 100%;
   height: 100%;
 
+}
+/* A section around all background images*/
+.section {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+/* A section around all text on the page*/
+section {
+  width: 100%;
+  height: 100%;
+  background-color: lightgrey;
+}
+
+/* Placing the background images */
+.background-1 {
+  background-image: url('../images/1.house.jpg');
+  /*centering the text */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.background-2 {
+  background-image: url('../images/2.door.jpg');
+}
+
+.background-3 {
+  background-image: url('../images/3.kitchen.jpg');
+}
+
+.background-4 {
+  background-image: url('../images/4.creepystairs.jpg');
+}
+
+.background-5 {
+  background-image: url('../images/6.bedroom.jpg');
+}
+
+.background-6 {
+  background-image: url('../images/5.stairs.jpg');
+}
+
+.background-7 {
+  background-image: url('../images/7.attic.jpg');
+}
+
+.background-8 {
+  background-image: url('../images/10.cabinet.jpg');
+}
+
+.background-9 {
+  background-image: url('../images/11.cateyes.jpg');
+}
+
+.background-10 {
+  background-image: url('../images/17vas.png');
+  background-color: black;
+
+}
+
+.background-11 {
+  background-image: url('../images/18mjau.jpg');
+}
+
+/* centering the welcome text*/
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.header h1{
+background-color: white;
+opacity: 0.55;
+width: 50%;
 }
 /* The Animation on the images*/
 .animation {
@@ -84,89 +166,6 @@ height: auto;
   width: 20%;
   height: auto;
   align-self: flex-end;
-}
-
-/* A section around all background images*/
-.section {
-  width: 100%;
-  height: 100vh;
-  background-size: contain;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-}
-
-section {
-  width: 100%;
-  height: 100vh;
-  background-color: lightgrey;
-}
-
-/* Placing the background images */
-.background-1 {
-  background-image: url('../images/1.house.jpg');
-  /*centering the text */
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.background-2 {
-  background-image: url('../images/2.door.jpg');
-}
-
-.background-3 {
-  background-image: url('../images/3.kitchen.jpg');
-}
-
-.background-4 {
-  background-image: url('../images/4.creepystairs.jpg');
-}
-
-.background-5 {
-  background-image: url('../images/6.bedroom.jpg');
-}
-
-.background-6 {
-  background-image: url('../images/5.stairs.jpg');
-}
-
-.background-7 {
-  background-image: url('../images/7.attic.jpg');
-}
-
-.background-8 {
-  background-image: url('../images/10.cabinet.jpg');
-}
-
-.background-9 {
-  background-image: url('../images/11.cateyes.jpg');
-}
-
-.background-10 {
-  background-image: url('../images/17vas.png');
-  background-color: black;
-
-}
-
-.background-11 {
-  background-image: url('../images/18mjau.jpg');
-}
-
-/* centering the welcome text*/
-.header{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.header h1{
-background-color: white;
-opacity: 0.55;
-width: 50%;
 }
 
 /* Making the images responsive*/
