@@ -166,34 +166,36 @@ height: auto;
 /* Smartphone */
 @media screen and (max-width: 568px) {
 
-.background-1, .background-3, .background-4, .background-5, .background-6,
-  .background-7, .background-8, .background-9, .background-10, .background-11 {
+.section {
   background-attachment: scroll;
-  height: 50vh;
+    background-size: 110% auto;
+    height: 50%;
   }
 
-.background-2 {
-  height: 50vh;
-  background-attachment: scroll;
-  }
+/*.background-2 {
+  /*height: 50vh;*/
+  /*background-attachment: scroll;
+  }*/
 
 .section{
-  height: 45vh;}
+  /*height: 45vh;*/
+}
 
 
 /* Tablet*/
   @media screen and (max-width: 800px) {
 
-  .background-1, .background-3, .background-4, .background-5, .background-6,
-    .background-7, .background-8, .background-9, .background-10, .background-11 {
-    background-attachment: scroll;
-    height: 50vh;
-    }
-
-  .background-2 {
-    height: 50vh;
-    background-attachment: scroll;
+    section {
+      height: 100%;
     }
 
   .section{
-    height: 45vh;}
+    background-attachment: scroll;
+      background-size: 110% auto;
+      height: 50%;
+    }
+
+  /*.background-2 {
+      background-size: 100% auto;
+    background-attachment: scroll;
+    }*/
