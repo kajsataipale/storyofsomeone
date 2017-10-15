@@ -19,7 +19,7 @@ b {
 
 }
 /* A section around all background images*/
-.section {
+.container {
   width: 100%;
   height: 100%;
   background-size: contain;
@@ -32,12 +32,15 @@ b {
 section {
   width: 100%;
   height: 110%;
-  display: flex;
-  flex-direction: column;
 }
 
 p {
     padding: 4%;
+}
+
+.page11 {
+  /*display: flex;
+  flex-wrap: wrap;*/
 }
 
 /* Placing the background images */
@@ -180,6 +183,9 @@ height: auto;
     height: 50%;
   }
 
+  .background-1 {
+    background-image: url('../images/1mobilehouse.jpg');
+  }
 /*.background-2 {
   /*height: 50vh;*/
   /*background-attachment: scroll;
