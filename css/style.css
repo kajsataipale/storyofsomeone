@@ -51,7 +51,7 @@ text-decoration: none;
   align-items: center;
 }
 
-#handtag {
+.handtag {
   color: white;
 }
 
@@ -85,6 +85,8 @@ text-decoration: none;
 
 .background-2 {
   background-image: url('../images/2.door.jpg');
+  display: flex;
+  align-items: center;
 }
 
 .background-3 {
@@ -146,8 +148,6 @@ text-decoration: none;
 }
 .milk:hover
 {
-        -webkit-transform: rotateZ(-90deg);
-        -ms-transform: rotateZ(-90deg);
         transform: rotateZ(-90deg);
 }
 
