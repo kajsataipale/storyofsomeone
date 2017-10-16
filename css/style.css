@@ -115,9 +115,13 @@ text-decoration: none;
   display: flex;
   align-items: center;
 }
-
 .background-9 {
+  background-color: black;
+
+}
+.background-9:hover {
   background-image: url('../images/11.cateyes.jpg');
+  animation: fadein ease-in 2s;
 }
 
 .background-10 {
@@ -146,16 +150,14 @@ text-decoration: none;
         transform: rotateZ(30deg);
 }
 
-/*Making the fish swing*/
-.fish {
-width: 30%;
-height: auto;
-}
-
-#arrow {
-  width: 50%;
-  height: 50px;
-  opacity: .7;
+@keyframes fadein {
+    0% { opacity: 0; }
+    10% { opacity: 0.1}
+    25% { opacity: 0.25;}
+    50% { opacity: 0.5; }
+    75% { opacity: 0.75;}
+    90% { opacity: 0.9;}
+    100%   { opacity: 1; }
 }
 
 @keyframes swing
@@ -201,6 +203,17 @@ height: auto;
 /* End of the animation*/
 
 /*Editing the images in the text*/
+#arrow {
+  width: 50%;
+  height: 50px;
+  opacity: .7;
+}
+
+.fish {
+width: 30%;
+height: auto;
+}
+
 .vase {
   width: 20%;
   height: 50%;
