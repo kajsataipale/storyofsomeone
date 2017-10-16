@@ -53,8 +53,11 @@ text-decoration: none;
 
 .handtag {
   color: white;
+  width: 50%;
 }
-
+.door {
+  width: 40%;
+}
 .button {
   height: 3%;
   width: 6%;
@@ -237,7 +240,9 @@ height: auto;
 .vase {
   width: 20%;
 }
-
+.vaseyarn {
+  width: 20%
+}
 .yarn {
   width: 20%;
   height: auto;
@@ -277,7 +282,7 @@ height: auto;
   }*/
   .background-1 {
     background-image: url('../images/1mobilehouse.jpg');
-    background-size: 100%;
+    /*background-size: 100%;*/
   }
 /*.background-2 {
   /*height: 50vh;*/
