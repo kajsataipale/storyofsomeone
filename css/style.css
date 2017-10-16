@@ -31,11 +31,36 @@ b {
 /* A section around all text on the page*/
 section {
   width: 100%;
-  height: 110%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 p {
     padding: 4%;
+}
+
+a {
+text-decoration: none;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#handtag {
+  color: white;
+}
+
+.button {
+  height: 3%;
+  width: 6%;
+  border-style: solid;
+  border-color: red;
+  border-width: 2px;
 }
 
 .page11 {
@@ -43,9 +68,19 @@ p {
   flex-wrap: wrap;*/
 }
 
+/*#first {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+}*/
+
 /* Placing the background images */
 .background-1 {
   background-image: url('../images/1house.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .background-2 {
@@ -74,6 +109,8 @@ p {
 
 .background-8 {
   background-image: url('../images/10.cabinet.jpg');
+  display: flex;
+  align-items: center;
 }
 
 .background-9 {
@@ -110,6 +147,12 @@ p {
 .fish {
 width: 30%;
 height: auto;
+}
+
+#arrow {
+  width: 50%;
+  height: 50px;
+  opacity: .7;
 }
 
 @keyframes swing
@@ -173,27 +216,39 @@ height: auto;
 .tail {
   width: 20%
 }
+
 /* Making the images responsive*/
 /* Smartphone */
 @media screen and (max-width: 568px) {
 
-.section {
+.container {
   background-attachment: scroll;
-    background-size: 110% auto;
+    /*background-size: 110% auto;*/
     height: 50%;
+    width: 100%;
   }
 
+  /*.container {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }*/
   .background-1 {
     background-image: url('../images/1mobilehouse.jpg');
+    background-size: 100%;
   }
 /*.background-2 {
   /*height: 50vh;*/
   /*background-attachment: scroll;
   }*/
 
-.section{
-  /*height: 45vh;*/
-}
+@media screen and (min-width: 768px) {
+  section {
+    height: 100%;
+  }
 
 
 /* Tablet*/
@@ -203,9 +258,9 @@ height: auto;
       height: 100%;
     }
 
-  .section{
+  .container {
     background-attachment: scroll;
-      background-size: 110% auto;
+      /*background-size: 110% auto;*/
       height: 50%;
     }
 
