@@ -156,6 +156,31 @@ text-decoration: none;
         -ms-transform: rotateZ(30deg);
         transform: rotateZ(30deg);
 }
+.milk:hover
+{
+        -webkit-transform: rotateZ(-90deg);
+        -ms-transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg);
+}
+
+@keyframes dead {
+  0% {
+            transform: rotate(0);
+            /*transform-origin: top right;*/
+  }
+  25% {
+            transform: rotate(-70deg);
+            /*transform-origin: top right;*/
+  }
+  50% {
+            transform: rotate(0);
+            /*transform-origin: top right;*/
+  }
+  100% {
+            transform: rotate(70);
+            /*transform-origin: top right;*/
+  }
+}
 
 @keyframes fadein {
     0% { opacity: 0; }
@@ -245,6 +270,9 @@ height: auto;
 }
 .tail {
   width: 20%
+}
+.dead {
+	animation: dead 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite reverse both;
 }
 
 /* Media queries */
