@@ -51,13 +51,8 @@ text-decoration: none;
   align-items: center;
 }
 
-.handtag {
+#handtag {
   color: white;
-  width: 50%
-}
-
-.door {
-  width: 40%;
 }
 
 .button {
@@ -68,14 +63,11 @@ text-decoration: none;
   border-width: 2px;
 }
 
-.page11flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 1%;
+.page11 {
+  /*display: flex;
+  flex-wrap: wrap;*/
 }
+
 /*#first {
   display: flex;
   justify-content: center;
@@ -93,8 +85,6 @@ text-decoration: none;
 
 .background-2 {
   background-image: url('../images/2.door.jpg');
-  display: flex;
-  align-items: center;
 }
 
 .background-3 {
@@ -152,9 +142,7 @@ text-decoration: none;
 }
 .animation:hover
 {
-        -webkit-transform: rotateZ(30deg);
-        -ms-transform: rotateZ(30deg);
-        transform: rotateZ(30deg);
+  transform: rotateZ(30deg);
 }
 .milk:hover
 {
@@ -248,13 +236,6 @@ height: auto;
 
 .vase {
   width: 20%;
-  height: 50%;
-}
-
-.vaseyarn {
-  width: 20%;
-  height: 50%;
-  align-self: flex-end;
 }
 
 .yarn {
@@ -275,16 +256,54 @@ height: auto;
 	animation: dead 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite reverse both;
 }
 
-/* Media queries */
+/* Making the images responsive*/
+/* Smartphone */
+@media screen and (max-width: 568px) {
 
-@media screen and (max-width: 800px) {
+.container {
+  background-attachment: scroll;
+    /*background-size: 110% auto;*/
+    height: 50%;
+    width: 100%;
+  }
+
+  /*.container {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }*/
   .background-1 {
     background-image: url('../images/1mobilehouse.jpg');
+    background-size: 100%;
   }
+/*.background-2 {
+  /*height: 50vh;*/
+  /*background-attachment: scroll;
+  }*/
+
+@media screen and (min-width: 768px) {
+  section {
+    height: 100%;
+  }
+
+
+/* Tablet*/
+  @media screen and (max-width: 800px) {
+
+    section {
+      height: 100%;
+    }
 
   .container {
     background-attachment: scroll;
-      height: 40%;
+      /*background-size: 110% auto;*/
+      height: 50%;
     }
 
-  }
+  /*.background-2 {
+      background-size: 100% auto;
+    background-attachment: scroll;
+    }*/
