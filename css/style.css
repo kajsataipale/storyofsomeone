@@ -247,54 +247,16 @@ height: auto;
   width: 20%
 }
 
-/* Making the images responsive*/
-/* Smartphone */
-@media screen and (max-width: 568px) {
+/* Media queries */
 
-.container {
-  background-attachment: scroll;
-    /*background-size: 110% auto;*/
-    height: 50%;
-    width: 100%;
-  }
-
-  /*.container {
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }*/
+@media screen and (max-width: 800px) {
   .background-1 {
     background-image: url('../images/1mobilehouse.jpg');
-    background-size: 100%;
   }
-/*.background-2 {
-  /*height: 50vh;*/
-  /*background-attachment: scroll;
-  }*/
-
-@media screen and (min-width: 768px) {
-  section {
-    height: 100%;
-  }
-
-
-/* Tablet*/
-  @media screen and (max-width: 800px) {
-
-    section {
-      height: 100%;
-    }
 
   .container {
     background-attachment: scroll;
-      /*background-size: 110% auto;*/
-      height: 50%;
+      height: 40%;
     }
 
-  /*.background-2 {
-      background-size: 100% auto;
-    background-attachment: scroll;
-    }*/
+  }
