@@ -51,8 +51,13 @@ text-decoration: none;
   align-items: center;
 }
 
-#handtag {
+.handtag {
   color: white;
+  width: 50%
+}
+
+.door {
+  width: 40%;
 }
 
 .button {
@@ -88,6 +93,8 @@ text-decoration: none;
 
 .background-2 {
   background-image: url('../images/2.door.jpg');
+  display: flex;
+  align-items: center;
 }
 
 .background-3 {
