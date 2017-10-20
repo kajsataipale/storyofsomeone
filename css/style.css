@@ -130,14 +130,36 @@ text-decoration: none;
   width: 20%;
   height: auto;
   align-self: flex-start;
+  animation: rotate-center 2s linear infinite alternate both;
+  transform-origin: 50% 100%;
 }
-.animation:hover
-{
-  transform: rotateZ(30deg);
+
+.milk {
+  width: 20%;
+  height: auto;
+  animation: pour 2s linear infinite alternate both;
 }
-.milk:hover
-{
-        transform: rotateZ(-90deg);
+
+@keyframes rotate-center {
+  0% {
+
+            transform: rotate(-5deg);
+  }
+  100% {
+
+            transform: rotate(10deg);
+  }
+}
+
+@keyframes pour {
+  0% {
+
+            transform: rotate(0deg);
+  }
+  100% {
+
+            transform: rotate(-90deg);
+  }
 }
 
 @keyframes dead {
@@ -203,12 +225,6 @@ text-decoration: none;
     }
 }
 
-.swing:hover
-{
-
-        animation: swing 1s ease;
-        animation-iteration-count: 2;
-}
 /* End of the animation*/
 
 /*Editing the images in the text*/
