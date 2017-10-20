@@ -66,17 +66,6 @@ text-decoration: none;
   border-width: 2px;
 }
 
-.page11 {
-  /*display: flex;
-  flex-wrap: wrap;*/
-}
-
-/*#first {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-
-}*/
 
 /* Placing the background images */
 .background-1 {
@@ -130,9 +119,6 @@ text-decoration: none;
   background-image: url('../images/17vas.png');
   background-color: black;
   background-size: 60%;
-  /*display: flex;
-  justify-content: center;
-  align-items: center;*/
 }
 
 .background-11 {
@@ -172,7 +158,7 @@ text-decoration: none;
             /*transform-origin: top right;*/
   }
 }
-
+/*Making the background image fade in*/
 @keyframes fadein {
     0% { opacity: 0; }
     10% { opacity: 0.1}
@@ -187,32 +173,32 @@ text-decoration: none;
 {
     15%
     {
-        -webkit-transform: translateX(5px);
+
         transform: translateX(5px);
     }
     30%
     {
-        -webkit-transform: translateX(-5px);
+
         transform: translateX(-5px);
     }
     50%
     {
-        -webkit-transform: translateX(3px);
+
         transform: translateX(3px);
     }
     65%
     {
-        -webkit-transform: translateX(-3px);
+
         transform: translateX(-3px);
     }
     80%
     {
-        -webkit-transform: translateX(2px);
+
         transform: translateX(2px);
     }
     100%
     {
-        -webkit-transform: translateX(0);
+
         transform: translateX(0);
     }
 }
@@ -267,27 +253,14 @@ height: auto;
 
 .container {
   background-attachment: scroll;
-    /*background-size: 110% auto;*/
     height: 50%;
     width: 100%;
   }
 
-  /*.container {
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }*/
   .background-1 {
     background-image: url('../images/1mobilehouse.jpg');
-    /*background-size: 100%;*/
+
   }
-/*.background-2 {
-  /*height: 50vh;*/
-  /*background-attachment: scroll;
-  }*/
 
 @media screen and (min-width: 768px) {
   section {
@@ -304,11 +277,5 @@ height: auto;
 
   .container {
     background-attachment: scroll;
-      /*background-size: 110% auto;*/
       height: 50%;
     }
-
-  /*.background-2 {
-      background-size: 100% auto;
-    background-attachment: scroll;
-    }*/
