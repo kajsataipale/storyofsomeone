@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  /*height: 100%;*/
   font-family: 'Reenie Beanie', cursive;
   font-size: 200%;
   background-color: lightgrey;
@@ -38,11 +37,11 @@ section {
 }
 
 p {
-    padding: 4%;
+  padding: 4%;
 }
 
 a {
-text-decoration: none;
+  text-decoration: none;
 }
 
 .first {
@@ -181,7 +180,8 @@ text-decoration: none;
   }
 }
 /*Making the background image fade in*/
-@keyframes fadein {
+@keyframes fadein
+{
     0% { opacity: 0; }
     10% { opacity: 0.1}
     25% { opacity: 0.25;}
@@ -263,7 +263,7 @@ height: auto;
 	animation: dead 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite reverse both;
 }
 
-/* Making the images responsive*/
+/* Making the images responsiv for :*/
 /* Smartphone */
 @media screen and (max-width: 568px) {
 
