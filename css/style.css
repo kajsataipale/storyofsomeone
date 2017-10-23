@@ -5,19 +5,18 @@ body {
   background-color: lightgrey;
   line-height: 1.8em;
 }
-/*Setting the font size on the words we want to higlioght*/
+/* Setting the font size on the words we want to higlight */
 b {
   font-size: 130%;
   text-transform: uppercase;
 }
-/* A wrapper around all content on the page*/
+/* A wrapper around all content on the page */
 .wrapper {
   position: absolute;
   width: 100%;
   height: 100%;
-
 }
-/* A section around all background images*/
+/* A section around all background images */
 .container {
   width: 100%;
   height: 100%;
@@ -25,7 +24,6 @@ b {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
 }
 /* A section around all text on the page*/
 section {
@@ -128,7 +126,7 @@ a {
   background-image: url('../images/end.jpg');
 }
 
-/* The Animation on the images*/
+/* The Animation on the images */
 .animation {
   width: 20%;
   height: auto;
@@ -141,6 +139,10 @@ a {
   width: 20%;
   height: auto;
   animation: pour 2s linear infinite alternate both;
+}
+
+.dead {
+	animation: dead 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite reverse both;
 }
 
 @keyframes rotate-center {
@@ -183,7 +185,7 @@ a {
             /*transform-origin: top right;*/
   }
 }
-/*Making the background image fade in*/
+/* Making the background image fade in */
 @keyframes fadein
 {
     0% { opacity: 0; }
@@ -228,10 +230,9 @@ a {
         transform: translateX(0);
     }
 }
+/* End of animations */
 
-/* End of the animation*/
-
-/*Editing the images in the text*/
+/* Editing the images in the text */
 #arrow {
   width: 50%;
   height: 50px;
@@ -262,9 +263,6 @@ height: auto;
 }
 .tail {
   width: 20%
-}
-.dead {
-	animation: dead 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite reverse both;
 }
 
 /* Making the images responsiv for :*/
