@@ -124,6 +124,10 @@ a {
   background-image: url('../images/18mjau.jpg');
 }
 
+.background-12 {
+  background-image: url('../images/end.jpg');
+}
+
 /* The Animation on the images*/
 .animation {
   width: 20%;
@@ -275,6 +279,11 @@ height: auto;
 
   .background-1 {
     background-image: url('../images/1mobilehouse.jpg');
+
+  }
+
+  .background-12 {
+    background-image: url('../images/mobileend.jpg');
 
   }
 
