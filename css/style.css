@@ -1,0 +1,304 @@
+body {
+  margin: 0;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 200%;
+  background-color: lightgrey;
+  line-height: 1.8em;
+}
+/* Setting the font size on the words we want to higlight */
+b {
+  font-size: 130%;
+  text-transform: uppercase;
+}
+/* A wrapper around all content on the page */
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* A section around all background images */
+.container {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* A section around all text on the page*/
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  padding: 4%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.handtag {
+  color: white;
+  width: 50%;
+}
+.door {
+  width: 40%;
+}
+.button {
+  height: 3%;
+  width: 6%;
+  border-style: solid;
+  border-color: red;
+  border-width: 2px;
+}
+
+
+/* Placing the background images */
+.background-1 {
+  background-image: url('../images/1house.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.background-2 {
+  background-image: url('../images/2.door.jpg');
+  display: flex;
+  align-items: center;
+}
+
+.background-3 {
+  background-image: url('../images/3.kitchen.jpg');
+}
+
+.background-4 {
+  background-image: url('../images/4.creepystairs.jpg');
+}
+
+.background-5 {
+  background-image: url('../images/6.bedroom.jpg');
+}
+
+.background-6 {
+  background-image: url('../images/5.stairs.jpg');
+}
+
+.background-7 {
+  background-image: url('../images/7.attic.jpg');
+}
+
+.background-8 {
+  background-image: url('../images/10.cabinet.jpg');
+  display: flex;
+  align-items: center;
+}
+.background-9 {
+  background-color: black;
+
+}
+.background-9:hover {
+  background-image: url('../images/11.cateyes.jpg');
+  animation: fadein ease-in 2s;
+}
+
+.background-10 {
+  background-image: url('../images/17vas.png');
+  background-color: black;
+  background-size: 60%;
+}
+
+.background-11 {
+  background-image: url('../images/18mjau.jpg');
+}
+
+.background-12 {
+  background-image: url('../images/end.jpg');
+}
+
+/* The Animation on the images */
+.animation {
+  width: 20%;
+  height: auto;
+  align-self: flex-start;
+  animation: rotate-center 2s linear infinite alternate both;
+  transform-origin: 50% 100%;
+}
+
+.milk {
+  width: 20%;
+  height: auto;
+  animation: pour 2s linear infinite alternate both;
+}
+
+.dead {
+	animation: dead 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite reverse both;
+}
+
+@keyframes rotate-center {
+  0% {
+
+            transform: rotate(-5deg);
+  }
+  100% {
+
+            transform: rotate(10deg);
+  }
+}
+
+@keyframes pour {
+  0% {
+
+            transform: rotate(0deg);
+  }
+  100% {
+
+            transform: rotate(-90deg);
+  }
+}
+
+@keyframes dead {
+  0% {
+            transform: rotate(0);
+            /*transform-origin: top right;*/
+  }
+  25% {
+            transform: rotate(-70deg);
+            /*transform-origin: top right;*/
+  }
+  50% {
+            transform: rotate(0);
+            /*transform-origin: top right;*/
+  }
+  100% {
+            transform: rotate(70);
+            /*transform-origin: top right;*/
+  }
+}
+/* Making the background image fade in */
+@keyframes fadein
+{
+    0% { opacity: 0; }
+    10% { opacity: 0.1}
+    25% { opacity: 0.25;}
+    50% { opacity: 0.5; }
+    75% { opacity: 0.75;}
+    90% { opacity: 0.9;}
+    100%   { opacity: 1; }
+}
+
+@keyframes swing
+{
+    15%
+    {
+
+        transform: translateX(5px);
+    }
+    30%
+    {
+
+        transform: translateX(-5px);
+    }
+    50%
+    {
+
+        transform: translateX(3px);
+    }
+    65%
+    {
+
+        transform: translateX(-3px);
+    }
+    80%
+    {
+
+        transform: translateX(2px);
+    }
+    100%
+    {
+
+        transform: translateX(0);
+    }
+}
+/* End of animations */
+
+/* Editing the images in the text */
+#arrow {
+  width: 50%;
+  height: 50px;
+  opacity: .7;
+}
+
+.fish {
+width: 30%;
+height: auto;
+}
+
+.vase {
+  width: 20%;
+}
+.vaseyarn {
+  width: 20%
+}
+.yarn {
+  width: 20%;
+  height: auto;
+  align-self: flex-end;
+}
+.goldfish {
+    width: 20%;
+}
+.flower{
+    width: 30%;
+}
+.tail {
+  width: 20%
+}
+
+/* Making the images responsiv for :*/
+/* Smartphone */
+@media screen and (max-width: 568px) {
+
+.container {
+  background-attachment: scroll;
+    height: 50%;
+    width: 100%;
+  }
+
+  .background-1 {
+    background-image: url('../images/1mobilehouse.jpg');
+
+  }
+
+  .background-12 {
+    background-image: url('../images/mobileend.jpg');
+
+  }
+
+@media screen and (min-width: 768px) {
+  section {
+    height: 100%;
+  }
+
+
+/* Tablet*/
+  @media screen and (max-width: 800px) {
+
+    section {
+      height: 100%;
+    }
+
+  .container {
+    background-attachment: scroll;
+      height: 50%;
+    }
